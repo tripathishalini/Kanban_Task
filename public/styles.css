@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set the initial background color (night) */
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; Hide overflow to prevent horizontal scrolling */
+    position: relative; /* Create a positioning context for absolute elements */
+    animation: dayNight 15s infinite alternate; /* Apply animation */
+}
+
+@keyframes dayNight {
+    0%, 100% {
+        background: url('/desert-night.jfif') center/cover no-repeat; /* Night background */
+        /* background-size: 100% 90%; Stretch to cover the entire screen */
+    }
+    50% {
+        background: url('/desert-day.jfif') center/cover no-repeat; /* Day background */
+        /* background-size: 100% 90%; Stretch to cover the entire screen */
+    }
+}
+
+
+.kanban-board {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* overflow-x:scroll; */
+    justify-content: space-between;
+    padding: 50px;
+    margin: 20px;
+    
+}
+
+.column {
+    width: 200px;
+    background-color: #9ad2f7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 10px;
+    min-height: 300px;
+}
+
+.column-header {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.task {
+    background-color: #f09393;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+.AddTaskForm {
+background: #89e0e9;
+border: 1px solid #ddd;
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+max-height: 400px;
+max-width: 200px;
+min-height: 400px;
+min-width: 200px;
+/* overflow-y: auto; */
+}
+
+.AddTaskForm h2 {
+font-size: 18px;
+margin-bottom: 10px;
+color: #000;
+}
+
+.AddTaskForm form {
+display: grid;
+gap: 10px;
+}
+
+.AddTaskForm label {
+font-weight: bold;
+color: #000;
+/* margin: 0px 20px; */
+}
+
+.AddTaskForm input,
+.AddTaskForm select {
+width: 75%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+background-color: #e5c0f4;
+/* margin: 0px 10px; */
+}
+
+.AddTaskForm button {
+
+background: rgb(231, 12, 52);
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 30px;
+cursor: pointer;
+margin: 20px;
+}
+.AddTaskForm button:hover {
+    background-color: #e5c0f4;
+    color: #000;
+
+}
+

@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  /* background-color: #5873ef; */
+  margin: 5px;
+}
+button{
+  background-color: #e5c0f4;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  width: 125px;
+  border-radius: 5px;
+  
+}
+button:hover{
+  background-color: #89e0e9;
+  border-radius: 5px;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin:10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css or your custom styles file */
+.TicketBoard {
+  margin-top: 50px;
+  display:flex;
+  /* margin-top: auto; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  color: rgb(231, 12, 52);
+  /* background-color: aquamarine; */
+}
+
+.TicketColumn {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px; /* Adjust the width as needed */
+  background-color: #89e0e9;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+  height: fit-content;
+  color:black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TicketCard {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e5c0f4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: 100px; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end;  */
+
+
+}
+
+/* Adjust styles for different grouping criteria */
+.TicketColumn h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.TicketColumn p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.TicketCard h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.TicketCard p{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Add more CSS rules as needed to further style your components */
+
